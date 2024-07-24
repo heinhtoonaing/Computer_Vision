@@ -1,0 +1,21 @@
+Project Overview:
+The project aimed to develop a machine learning model to classify architectural styles of Ayutthaya using a dataset of images. The classification problem involved identifying different styles based on visual features from historical images.
+
+Data Preparation:
+I collected images of Ayutthaya architecture and preprocessed them for analysis. This involved remapping labels to ensure consistency across different classes and resizing images to a uniform size for input into the model.
+
+Model Development:
+I designed a simple neural network with Dense layers for classification. The model was trained using the processed images with a validation split to monitor performance. Key hyperparameters included the number of epochs and batch size.
+
+Model Evaluation:
+The model was evaluated on a separate test set, achieving an accuracy of approximately 52.35%. This evaluation was performed using metrics such as accuracy and loss.
+
+Visualization:
+I used visualization techniques to display sample images and model predictions. This included showing preprocessed images and their classifications.
+
+Challenges and Solutions:
+One challenge was ensuring that the labels were correctly aligned with the images, which was addressed by remapping labels and verifying consistency.
+
+Future Work:
+Improvements could include exploring more complex model architectures or additional data augmentation techniques to enhance model performance.
+
