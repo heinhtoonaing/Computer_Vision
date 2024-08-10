@@ -25,7 +25,7 @@ def find_images(directory):
     return image_files
 
 def main():
-    image_dir = r'C:\Users\Hein Htoo Naing\Computer_Vision\Processed_Ayutthaya'
+    image_dir = r'C:\Users\Hein Htoo Naing\Computer_Vision\computer-vision-project/Processed_Ayutthaya'
     image_files = find_images(image_dir)
 
     if not image_files:

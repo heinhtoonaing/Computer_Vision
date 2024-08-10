@@ -1,13 +1,18 @@
 import numpy as np
+import os
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 
 # Load features and labels
-features = np.load(r'C:\Users\Hein Htoo Naing\Computer_Vision\features.npy', allow_pickle=True)
+base_dir = r'C:\Users\Hein Htoo Naing\Computer_Vision\computer-vision-project'
+features_path = os.path.join(base_dir, 'features.npy')
+labels_path = os.path.join(base_dir, 'fixed_labels.npy')
+
+features = np.load(features_path, allow_pickle=True)
 features = np.vstack(features)  # Flatten list of arrays
 
-labels = np.load(r'C:\Users\Hein Htoo Naing\Computer_Vision\fixed_labels.npy')  # Use remapped labels
+labels = np.load(labels_path)  # Use remapped labels
 
 # Check the shapes
 print(f"Features shape: {features.shape}")
